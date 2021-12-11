@@ -1,3 +1,3 @@
 # HunkyHusky
 
-made by Victor and Nick
+Made by Victor and Nick
