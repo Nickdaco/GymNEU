@@ -1,0 +1,129 @@
+body { 
+    font-family: Helvetica, "Bitstream Vera Serif", sans-serif;
+    color: red;
+    background-color: black;
+    margin: auto;
+    
+}
+h1 {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid #B10617;
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.marino-info-container {
+    padding: 40px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    width: 75%
+}
+.marino-second-floor-container {
+    margin: auto;
+    background: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 60%;
+}
+span {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    justify-content: center;
+}
+
+.marino-second-floor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    color: #fff;
+    width: 0;
+    opacity: 0;
+    font-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, #B10617, red); 
+    transition: 1.5s;
+}
+
+.marino-third-floor-cardio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    color: #fff;
+    width: 0;
+    opacity: 0;
+    font-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, #B10617, red); 
+    transition: 1.5s;
+}
+
+.marino-third-floor-cardio-container {
+    margin: auto;
+    background: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 60%;
+}
+
+.marino-third-floor-weights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    color: #fff;
+    width: 0;
+    opacity: 0;
+    font-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, #B10617, red); 
+    transition: 1.5s;
+}
+
+.marino-third-floor-weights-container {
+    margin: auto;
+    background: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 60%;
+}
+
+.marino-gymnasium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    color: #fff;
+    width: 0;
+    opacity: 0;
+    font-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, #B10617, red); 
+    transition: 1.5s;
+}
+
+.marino-gymnasium-container {
+    margin: auto;
+    background: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 60%;
+}
