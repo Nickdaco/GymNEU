@@ -3,7 +3,6 @@
 const marinoSecond = document.querySelector('.marino-second-floor');
 
 
-
 setTimeout(() => {
     
     marinoSecond.style.opacity = 1;
