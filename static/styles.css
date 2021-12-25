@@ -3,7 +3,7 @@ body {
     color: red;
     background-color: black;
     margin: auto;
-    
+    margin-top: 5rem;
 }
 h1 {
     display: flex;
@@ -128,14 +128,14 @@ span {
     width: 60%;
 }
 
-
-body {
-  margin-top: 5rem;
-}
-
 .bg-red {
   background-color: #e0091b;
 }
 
-
+.marino-info-container-clear {
+    padding: 40px;
+    border-radius: 20px;
+    margin: auto;
+    width: 75%
+}
 
