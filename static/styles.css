@@ -1,20 +1,23 @@
 body { 
-    font-family: Helvetica, "Bitstream Vera Serif", sans-serif;
+    font-family: Verdana, "Bitstream Vera Serif", sans-serif;
     color: red;
-    background-color: black;
+    background-color: white;
     margin: auto;
     margin-top: 5rem;
 }
 h1 {
+    font-weight: bold;
     display: flex;
     font-size: 50px;
-    color: white;
+    color: black;
     margin: auto;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
     border: 3px solid #B10617;
-    width: 30%;
+    width: 50%;
     margin-bottom: 40px;
     border-radius: 20px;
     margin-top: 20px;
@@ -24,7 +27,7 @@ h1 {
     border-radius: 20px;
     margin: auto;
     background-color: white;
-    width: 75%
+    width: 100%
 }
 .marino-second-floor-container {
     margin: auto;
@@ -133,7 +136,7 @@ span {
 }
 
 .marino-info-container-clear {
-    padding: 40px;
+    padding: 10px;
     border-radius: 20px;
     margin: auto;
     width: 75%
