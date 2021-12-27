@@ -39,7 +39,7 @@
 
 <center><h1>Hours of Operation</h1></center>
 <div class="marino-info-container-clear">
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-striped table-hover">
         <thead>
         <tr>
             <th scope="col">Days</th>
@@ -49,31 +49,31 @@
         <tbody>
         <tr>
             <th scope="row">Sunday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Sunday, 12/26/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Monday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Monday, 12/27/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Tuesday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Tuesday, 12/28/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Wednesday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Wednesday, 12/29/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Thursday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Thursday, 12/30/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Friday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Friday, 12/31/21"] }}</th>
         </tr>
         <tr>
             <th scope="row">Saturday</th>
-            <th scope="row">time</th>
+            <th scope="row">{{ context['operating-hours']["Saturday, 1/1/22"] }}</th>
         </tr>
         </tbody>
     </table>
