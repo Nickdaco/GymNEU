@@ -1,5 +1,7 @@
 from scrape import SiteData
 import json
+from scrape_events import event_to_dict, get_events
+
 
 
 # ----- Gym Percentage Data -----
@@ -48,6 +50,9 @@ setattr(operating_hours_days, "data", dict(zip(open_date, open_hours)))
 
 # Combines dict of open hours and dict of percent full values into one list.
 marino_info = {gym_percents.title: gym_percents.data, operating_hours_days.title: operating_hours_days.data}
+
+marino_info["Events"] = event_to_dict(get_events())
+
 
 # puts whole list of dict in json
 with open("gym_percents.json", "w") as outfile:
