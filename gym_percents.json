@@ -1,10 +1,10 @@
 {
   "Gym-Availability-Percentage": {
-    "Marino Center - 2nd Floor": 2,
-    "Marino Center - 3rd Floor Select & Cardio": 0,
-    "Marino Center - 3rd Floor Weight Room": 9,
-    "Marino Center - Gymnasium": 3,
-    "Marino Center - Track": 5,
+    "Marino Center - 2nd Floor": 90,
+    "Marino Center - 3rd Floor Select & Cardio": 20,
+    "Marino Center - 3rd Floor Weight Room": 80,
+    "Marino Center - Gymnasium": 33,
+    "Marino Center - Track": 55,
     "SquashBusters - 4th Floor": 10
   },
   "operating-hours": {

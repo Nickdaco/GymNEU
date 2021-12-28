@@ -39,6 +39,7 @@ days_hours = days_hours[0].split('\n')
 
 # Create separate lists of dates and times.
 open_date = [elem.split(': ')[0] for elem in days_hours]
+open_date = [elem.split(', ')[1] for elem in open_date]
 open_hours = [elem.split(': ')[1] for elem in days_hours]
 
 # Add data to instance
