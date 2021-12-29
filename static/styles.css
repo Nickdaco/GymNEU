@@ -1,12 +1,14 @@
+@font-face { font-family: Gotham; src: url('fonts/Gotham-Bold.otf'); }
+@font-face { font-family: Gotham; font-weight: bold; src: url('fonts/Gotham-Black.otf')}
+
 body { 
-    font-family: Verdana, "Bitstream Vera Serif", sans-serif;
-    color: red;
-    background-color: white;
-    margin: auto;
+    font-family: Gotham, sans-serif;
+    color: #B10617;
+    width: 100%;
     margin-top: 5rem;
 }
 h1 {
-    font-weight: bold;
+    
     display: flex;
     font-size: 50px;
     color: black;
@@ -23,6 +25,7 @@ h1 {
     margin-top: 40px;
 }
 .marino-info-container {
+    background-color: white;
     border: 3px solid #B10617;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -47,7 +50,7 @@ span {
     display: flex;
     margin: auto;
     font-size: 30px;
-    font-weight: bold;
+
     color: red;
     justify-content: center;
 }
@@ -62,7 +65,7 @@ span {
     width: 0;
     opacity: 0;
     font-size: 100%;
-    font-weight: bold;
+
     background: linear-gradient(to right, #B10617, red); 
     transition: 1.5s;
 }
@@ -77,7 +80,7 @@ span {
     width: 0;
     opacity: 0;
     font-size: 100%;
-    font-weight: bold;
+
     background: linear-gradient(to right, #B10617, red); 
     transition: 1.5s;
 }
@@ -100,7 +103,7 @@ span {
     width: 0;
     opacity: 0;
     font-size: 100%;
-    font-weight: bold;
+
     background: linear-gradient(to right, #B10617, red); 
     transition: 1.5s;
 }
@@ -123,7 +126,7 @@ span {
     width: 0;
     opacity: 0;
     font-size: 100%;
-    font-weight: bold;
+
     background: linear-gradient(to right, #B10617, red); 
     transition: 1.5s;
 }
@@ -141,9 +144,14 @@ span {
 }
 
 .marino-info-container-clear {
-    
     padding: 10px;
     border-radius: 20px;
     margin: auto;
     width: 75%
+}
+
+.table-container {
+    width: 100%;
+    background-color: white;
+    padding: 10px; 
 }
