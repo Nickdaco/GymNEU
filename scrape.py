@@ -22,3 +22,4 @@ class SiteData:
             return driver.find_elements(By.XPATH, self.find_path)
         else:
             print("unable to find anything")
+            
