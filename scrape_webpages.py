@@ -51,8 +51,21 @@ setattr(operating_hours_days, "data", dict(zip(open_date, open_hours)))
 # Combines dict of open hours and dict of percent full values into one list.
 marino_info = {gym_percents.title: gym_percents.data, operating_hours_days.title: operating_hours_days.data}
 
-marino_info["Events"] = event_to_dict(get_events())
 
+# event links
+event_links = {
+    'Court 2': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=8dCpAXZOtNUwCu7Xw7lFdvnMLXWJvC%2fXnljDAys%2fqmQx5OHc0kgRwku22rLLnqz9V187%2fQc5LcOubs4EolABUmZFwTbc8EyCREjolwr1Ekq69xl3QSidow%3d%3d#dailyContainer',
+    'Court 3': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=pw7uNs6e9v8qbfdIsvc5fDYq1MFunilYcWUxDMrP56yKqAjIwwaKA11U%2fQckiFjB2tWbX%2fc8606fDHS3t5PPuSnrcoE8cTQGmAOsO4wdf4ZaUfDtNt1OGQ%3d%3d',
+    'Sports Court': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=2sdeuuZ3cxh0hVZgJYA84txwBAjutRyjhYavKNQt%2f1ZU02OX1qeFfxh8QvnmqjnnvPoiPyTnIl8ZtHpxkgfPUK6dvglR7G8DdxFP69QIaS4hyDGPHot7LbGnj5jMFpqD'
+}
+event_out = {}
+for key in event_links:
+
+    event_out[key] = event_to_dict(get_events(event_links[key]))
+
+
+# add events
+marino_info["Events"] = event_out
 
 # puts whole list of dict in json
 with open("gym_percents.json", "w") as outfile:
