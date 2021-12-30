@@ -21,7 +21,7 @@ def index():
         list_of_days.append(today + datetime.timedelta(days=i))
     list_of_days = [i.strftime("%m/%d/%y") for i in list_of_days]
     date_time = today.strftime("%d/%m/%y %H:%M:%S")
-    return render_template('home.html', context=context, date_time=date_time,list_of_days=list_of_days)
+    return render_template('home.html', context=context, date_time=date_time, list_of_days=list_of_days)
 
 @app.route('/marino')
 def marino():

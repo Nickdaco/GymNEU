@@ -33,7 +33,7 @@ class Event:
         self.location = location
 
     def make_dict(self):
-        output_dict = {"Start Time": self.start_time, "End Time": self.end_time, 'Activity': self.activity,
+        output_dict = {"Start Time": self.start_time, "End Time": self.end_time, 'Event': self.activity,
                        'Location': self.location}
         return output_dict
 

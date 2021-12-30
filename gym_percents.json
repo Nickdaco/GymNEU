@@ -1,8 +1,23 @@
 {
   "Events": {
-    "Court 2": "No Events Today",
-    "Court 3": "No Events Today",
-    "Sports Court": "No Events Today"
+    "Court 2": {
+      "Start Time": "4:00 PM",
+      "End Time": "7:00 PM",
+      "Event": "Basketball",
+      "Location": "Marino Center - BB Ct2"
+    },
+    "Court 3": {
+      "Start Time": "7:00 PM",
+      "End Time": "10:00 PM",
+      "Event": "Intramural Sports",
+      "Location": "Marino Center - BB Ct3"
+    },
+    "Sports Court": {
+      "Start Time": "7:00 PM",
+      "End Time": "10:00 PM",
+      "Event": "Fencing",
+      "Location": "Marino Center - SP Court"
+    }
   },
   "Gym-Availability-Percentage": {
     "Marino Center - 2nd Floor": 10,
