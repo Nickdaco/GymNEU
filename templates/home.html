@@ -68,11 +68,13 @@
                 {% else %}
 
                 <tr>
-                    {% for key2 in context["Events"][key] %}
-                    <th scope="row">{{ context["Events"][key][key2] }}</th>
+                    {% for dictionary in context["Events"][key] %}
+                        <th scope="row">{{ dictionary['Start Time'] }}</th>
+                        <th scope="row">{{ dictionary['End Time'] }}</th>
+                        <th scope="row">{{ dictionary['Event'] }} </th>
+                        <th scope="row">{{ dictionary['Location'] }}</th>
+                    </tr>
                     {% endfor %}
-                </tr>
-
                 {% endif %}
             {% endfor %}
             {% endif %}

@@ -2,8 +2,6 @@ from scrape import SiteData
 import json
 from scrape_events import event_to_dict, get_events
 
-
-
 # ----- Gym Percentage Data -----
 # Make Class instance of how full the gym is
 gym_percents = SiteData(
@@ -60,9 +58,7 @@ event_links = {
 }
 event_out = {}
 for key in event_links:
-
     event_out[key] = event_to_dict(get_events(event_links[key]))
-
 
 # add events
 marino_info["Events"] = event_out
