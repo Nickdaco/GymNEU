@@ -27,6 +27,9 @@ def index():
 def marino():
     return redirect(url_for('index'))
 
+@app.route('/squashbusters')
+def squash():
+    return render_template('squash.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

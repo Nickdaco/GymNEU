@@ -47,9 +47,9 @@
                                 Marino
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Capacity</a></li>
-                                <li><a class="dropdown-item" href="#">Hours</a></li>
-                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marino') }}">Capacity</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marino') }}">Hours</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marino') }}">Events</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -58,9 +58,9 @@
                                 Squashbusters
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Capacity</a></li>
-                                <li><a class="dropdown-item" href="#">Hours</a></li>
-                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('squash') }}">Capacity</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('squash') }}">Hours</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('squash') }}">Events</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,7 +73,7 @@
 
 <div class="container">
     <body>
-        <center><h1>Marino Center</h1></center>
+        
         {% block content %}
         {% endblock %}
         <script type="text/javascript">
