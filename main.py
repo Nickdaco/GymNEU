@@ -29,7 +29,7 @@ def marino():
 
 @app.route('/squashbusters')
 def squash():
-    return render_template('squash.html')
+    return render_template('squash.html', context=gym_data)
 
 if __name__ == "__main__":
     app.run(debug=True)

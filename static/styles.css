@@ -38,6 +38,19 @@ h1 {
     background-color: white;
     width: 100%
 }
+.squash-info-container {
+  background-color: white;
+  border: 3px solid #B10617;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin: auto;
+  background-color: white;
+  width: 100%
+}
 .marino-second-floor-container {
     margin: auto;
     background: black;
@@ -155,6 +168,29 @@ span {
     width: 100%;
 
     padding: 10px; 
+}
+
+.squash-busters-container {
+    margin: auto;
+    background: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 75%;
+}
+
+
+.squash-fourth-floor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    color: #fff;
+    width: 0;
+    opacity: 0;
+    font-size: 100%;
+    background: linear-gradient(to right, #B10617, red); 
+    transition: 1.5s;
 }
 
 

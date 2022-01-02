@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
 <center><h1>Squashbusters</h1></center>
-
-
-
+<div class="squash-info-container">
+<span>SquashBusters Fourth Floor Capacity: </span>
+    <div class="squash-busters-container">
+        <div class="squash-fourth-floor"
+             data-done="{{ context['Gym-Availability-Percentage']['SquashBusters - 4th Floor']  }}">
+            {{ context['Gym-Availability-Percentage']['SquashBusters - 4th Floor'] }}%
+        </div>
+    </div>
+</div>
+<br>
+<br>
 
 
 {% endblock %}

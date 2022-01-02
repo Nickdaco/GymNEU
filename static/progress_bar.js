@@ -36,3 +36,12 @@ setTimeout(() => {
     marinoGymnasium.style.width = marinoGymnasium.getAttribute('data-done') + '%';
      
 }, 500)
+
+const squashFourth = document.querySelector('.squash-fourth-floor');
+
+setTimeout(() => {
+    
+    squashFourth.style.opacity = 1;
+    squashFourth.style.width = squashFourth.getAttribute('data-done') + '%';
+     
+}, 500)
