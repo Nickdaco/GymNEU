@@ -31,6 +31,14 @@ def marino():
 def squash():
     return render_template('squash.html', context=gym_data)
 
+@app.route('/skate')
+def skate():
+    return render_template('skate.html', context=gym_data)
+
+@app.route('/swim')
+def swim():
+    return render_template('swim.html', context=gym_data)
+
 if __name__ == "__main__":
     app.run(debug=True)
 

@@ -54,7 +54,10 @@ marino_info = {gym_percents.title: gym_percents.data, operating_hours_days.title
 event_links = {
     'Court 2': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=8dCpAXZOtNUwCu7Xw7lFdvnMLXWJvC%2fXnljDAys%2fqmQx5OHc0kgRwku22rLLnqz9V187%2fQc5LcOubs4EolABUmZFwTbc8EyCREjolwr1Ekq69xl3QSidow%3d%3d#dailyContainer',
     'Court 3': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=pw7uNs6e9v8qbfdIsvc5fDYq1MFunilYcWUxDMrP56yKqAjIwwaKA11U%2fQckiFjB2tWbX%2fc8606fDHS3t5PPuSnrcoE8cTQGmAOsO4wdf4ZaUfDtNt1OGQ%3d%3d',
-    'Sports Court': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=2sdeuuZ3cxh0hVZgJYA84txwBAjutRyjhYavKNQt%2f1ZU02OX1qeFfxh8QvnmqjnnvPoiPyTnIl8ZtHpxkgfPUK6dvglR7G8DdxFP69QIaS4hyDGPHot7LbGnj5jMFpqD'
+    'Sports Court': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=2sdeuuZ3cxh0hVZgJYA84txwBAjutRyjhYavKNQt%2f1ZU02OX1qeFfxh8QvnmqjnnvPoiPyTnIl8ZtHpxkgfPUK6dvglR7G8DdxFP69QIaS4hyDGPHot7LbGnj5jMFpqD',
+    'Multipurpose Room & Squash Courts': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=X4Oln4TEUSDqTi3gentDkmPIUn6POLGgxyzC1%2fL8tqL9OpassShMi692gKIXHpNl4wiYFqBcx3B8kWEBp5QEPhJTo4MgGrVQfwbfooixi%2blXFhc11ClkPf84D6d6%2fYeN',
+    'Open Skate': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=X4Oln4TEUSDqTi3gentDkmPIUn6POLGgxyzC1%2fL8tqL9OpassShMi692gKIXHpNl4wiYFqBcx3B8kWEBp5QEPhJTo4MgGrVQfwbfooixi%2blXFhc11ClkPf84D6d6%2fYeN',
+    'Open Swim': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=QuRdKeqFzOlNiDrD91Zu3JPCyDwz%2fhHG9ckX647qjC07Fk3%2bOa0Vhton7y7Pf65SEQSDcKWBz7eFUOPtJ8kUv9GE4LqMul60GHKgh%2bBC3KY%3d'
 }
 event_out = {}
 for key in event_links:
