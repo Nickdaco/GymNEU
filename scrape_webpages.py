@@ -63,6 +63,20 @@ event_out = {}
 for key in event_links:
     event_out[key] = event_to_dict(get_events(event_links[key]))
 
+marino_courts = ['Court 2', 'Court 3', 'Sports Court']
+squash_courts = ['Multipurpose Room & Squash Courts']
+skate_courts = ['Open Skate']
+swim_courts = ['Open Swim']
+
+full_event_out = {}
+for key in event_out:
+    if key in marino_courts:
+        full_event_out['Marino'] = event_out[key]
+    elif key in squash_courts:
+        full_event_out['Squashbusters'] = event_out[key]
+
+
+
 # add events
 marino_info["Events"] = event_out
 

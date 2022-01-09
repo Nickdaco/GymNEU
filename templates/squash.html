@@ -39,12 +39,8 @@
 
             {% for key in context["Events"] %}
 
-                {% if context['Events'][key] == "No Events Today" %}
-                    {{ pass }}
-
-                {% else %}
-
-                <tr>
+                {% if key == "Multipurpose Room & Squash Courts" %}
+                            <tr>
                     {% for dictionary in context["Events"][key] %}
                         <th scope="row">{{ dictionary['Start Time'] }}</th>
                         <th scope="row">{{ dictionary['End Time'] }}</th>
@@ -52,6 +48,11 @@
                         <th scope="row">{{ dictionary['Location'] }}</th>
                     </tr>
                     {% endfor %}
+
+
+                {% else %}
+                    {{ pass }}
+
                 {% endif %}
             {% endfor %}
             {% endif %}

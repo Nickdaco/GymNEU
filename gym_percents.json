@@ -34,6 +34,30 @@
         "Location": "Marino Center - SP Court",
         "Start Time": "8:00 PM"
       }
+    ],
+    "Multipurpose Room & Squash Courts": [
+      {
+        "End Time": "9:00 AM",
+        "Event": "Triathalon (CS)",
+        "Location": "Badger & Rosen - BKA",
+        "Start Time": "7:00 AM"
+      }
+    ],
+    "Open Skate": [
+      {
+        "End Time": "1:15 PM",
+        "Event": "Open Skate",
+        "Location": "Matthews Arena - ICE",
+        "Start Time": "11:00 AM"
+      }
+    ],
+    "Open Swim":[
+      {
+        "End Time": "2:15 PM",
+        "Event": "Open Swim",
+        "Location": "Cabot Gym - Barletta",
+        "Start Time": "11:45 AM"
+      }
     ]
   },
   "Gym-Availability-Percentage": {
