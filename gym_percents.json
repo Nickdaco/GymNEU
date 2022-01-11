@@ -2,80 +2,38 @@
   "Events": {
     "Court 2": [
       {
-        "End Time": "10:00 PM",
-        "Event": "Welcome Week",
+        "End Time": "12:00 AM",
+        "Event": "Open Basketball",
         "Location": "Marino Center - BB Ct2",
-        "Start Time": "8:00 PM"
-      },
+        "Start Time": "5:30 AM"
+      }
+    ],
+    "Court 3": [
       {
         "End Time": "12:00 AM",
-        "Event": "Badminton (CS)",
-        "Location": "Marino Center - BB Ct2",
-        "Start Time": "10:00 PM"
+        "Event": "Open Basketball",
+        "Location": "Marino Center - BB Ct3",
+        "Start Time": "5:30 AM"
       }
     ],
-    "Court 3": "No Events Today",
+    "Multipurpose Room & Squash Courts": "No Events Today",
+    "Open Skate": "No Events Today",
+    "Open Swim": "No Events Today",
     "Sports Court": [
       {
-        "End Time": "8:00 PM",
-        "Event": "Inline Hockey (CS)",
+        "End Time": "12:00 AM",
+        "Event": "Open Volleyball",
         "Location": "Marino Center - SP Court",
-        "Start Time": "6:00 PM"
-      },
-      {
-        "End Time": "10:00 PM",
-        "Event": "Volleyball (CS)",
-        "Location": "Marino Center - SP Court",
-        "Start Time": "8:00 PM"
-      },
-      {
-        "End Time": "10:00 PM",
-        "Event": "Welcome Week",
-        "Location": "Marino Center - SP Court",
-        "Start Time": "8:00 PM"
-      }
-    ],
-    "Multipurpose Room & Squash Courts": [
-      {
-        "End Time": "9:00 AM",
-        "Event": "Triathalon (CS)",
-        "Location": "Badger & Rosen - BKA",
-        "Start Time": "7:00 AM"
-      }
-    ],
-    "Open Skate": [
-      {
-        "End Time": "1:15 PM",
-        "Event": "Open Skate",
-        "Location": "Matthews Arena - ICE",
-        "Start Time": "11:00 AM"
-      }
-    ],
-    "Open Swim":[
-      {
-        "End Time": "2:15 PM",
-        "Event": "Open Swim",
-        "Location": "Cabot Gym - Barletta",
-        "Start Time": "11:45 AM"
+        "Start Time": "10:00 PM"
       }
     ]
   },
   "Gym-Availability-Percentage": {
-    "Marino Center - 2nd Floor": 89,
-    "Marino Center - 3rd Floor Select & Cardio": 13,
-    "Marino Center - 3rd Floor Weight Room": 34,
+    "Marino Center - 2nd Floor": 6,
+    "Marino Center - 3rd Floor Select & Cardio": 6,
+    "Marino Center - 3rd Floor Weight Room": 6,
     "Marino Center - Gymnasium": 7,
     "Marino Center - Track": 5,
-    "SquashBusters - 4th Floor": 43
-  },
-  "operating-hours": {
-    "1/1/22": "Closed",
-    "1/10 - Friday": "5:30am-midnight",
-    "1/2/22": "10:00am-8:00pm",
-    "1/3/22 - Friday": "6:00am-9:00pm",
-    "1/8/22": "8:00am-8:00pm",
-    "1/9/22": "10:00am-10:00pm",
-    "12/30/21": "Closed (Atrium open noon-7pm)",
-    "12/31/21": "Closed (Atrium open noon-4pm)"
+    "SquashBusters - 4th Floor": 10
   }
 }
