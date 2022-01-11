@@ -27,28 +27,28 @@ setattr(gym_percents, "data", dict(zip(gym_list, percent_list)))
 
 # ----- Operating Hour Data -----
 # Make instance of the hours of operation of the gym
-operating_hours_days = SiteData(
-    "https://www.northeastern.edu/campusrec/",
-    "/html/body/section[2]/div/header/table/tbody/tr/th[1]/p[2]",
-    'xpath',
-    'operating-hours')
-
-# Turns string into single item list.
-days_hours = [item.text for item in operating_hours_days.scrape_site()]
-days_hours = days_hours[0].split('\n')
-
-# Create separate lists of dates and times.
-open_date = [elem.split(': ')[0] for elem in days_hours]
-open_date = [elem.split(', ')[1] for elem in open_date]
-open_hours = [elem.split(': ')[1] for elem in days_hours]
-
-# Add data to instance
-setattr(operating_hours_days, "data", dict(zip(open_date, open_hours)))
-
+# operating_hours_days = SiteData(
+#     "https://www.northeastern.edu/campusrec/",
+#     "/html/body/section[2]/div/header/table/tbody/tr/th[1]/p[2]",
+#     'xpath',
+#     'operating-hours')
+#
+# # Turns string into single item list.
+# days_hours = [item.text for item in operating_hours_days.scrape_site()]
+# days_hours = days_hours[0].split('\n')
+#
+# # Create separate lists of dates and times.
+# open_date = [elem.split(': ')[0] for elem in days_hours]
+# open_date = [elem.split(', ')[1] for elem in open_date]
+# open_hours = [elem.split(': ')[1] for elem in days_hours]
+#
+# # Add data to instance
+# setattr(operating_hours_days, "data", dict(zip(open_date, open_hours)))
+#
 
 # Combines dict of open hours and dict of percent full values into one list.
-marino_info = {gym_percents.title: gym_percents.data, operating_hours_days.title: operating_hours_days.data}
-
+# marino_info = {gym_percents.title: gym_percents.data, operating_hours_days.title: operating_hours_days.data}
+marino_info = {gym_percents.title: gym_percents.data}
 
 # event links
 event_links = {
