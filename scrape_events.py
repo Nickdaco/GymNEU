@@ -47,13 +47,12 @@ def event_to_dict(event_results):
 
     else:
         event_results_list = event_results.splitlines()
-        remove_list = ["START TIME", "END TIME", "TIME ZONE", "EVENT NAME", "LOCATION"]
+        remove_list = ["START TIME", "END TIME", "TIME ZONE", "EVENT NAME", "LOCATION", 'Loading...']
         for delete in remove_list:
             event_results_list.remove(delete)
 
         # Event_list : List of Event Instances
         event_list = []
-
         word_list = [elem.split() for elem in event_results_list]
 
         for num in range(len(word_list)):
