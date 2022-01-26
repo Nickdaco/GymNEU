@@ -4,6 +4,7 @@
 
 <div class="marino-info-container">
 
+
     <span>Marino Second Floor Capacity: </span>
     <div class="marino-second-floor-container">
         <div class="marino-second-floor"
@@ -39,15 +40,22 @@
 
 <div class="table-container">
     <center><h1>Events</h1></center>
-    <div class="marino-info-container-clear">
-        <table class="table table-bordered table-striped table-hover">
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Court 1</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Court 2</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Sports Court</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active marino-info-container-clear" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+      <table class="table table-bordered table-striped table-hover">
             <thead>
-
 <!--            If there are no events at all today-->
-            {% if context["Events"]["Court 2"] and context["Events"]["Court 3"] and context["Events"]["Sports Court"] ==
-            "No Events Today" %}
+            {% if context["Events"]["Court 2"] == "No Events Today" %}
 
-            <h1> No Events Today... :( </h1>
+                <h1> No Events at Court 1 Today... :( </h1>
 
 <!--            If there are any events display them in the table-->
             {% else %}
@@ -72,6 +80,45 @@
                     </tr>
                     {% endfor %}
 
+                {% else %}
+                    {{ pass }}
+
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+  <div class="tab-pane fade marino-info-container-clear" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+       <table class="table table-bordered table-striped table-hover">
+            <thead>
+      <!--            If there are no events at all today-->
+            {% if context["Events"]["Court 3"] == "No Events Today" %}
+
+                <h1> No Events at Court 2 Today... :( </h1>
+
+<!--            If there are any events display them in the table-->
+            {% else %}
+            <tr>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+                <th scope="col">Event Name</th>
+                <th scope="col">Location</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for key in context["Events"] %}
+
+                {% if key == "Court 3" %}
+                            <tr>
+                    {% for dictionary in context["Events"][key] %}
+                        <th scope="row">{{ dictionary['Start Time'] }}</th>
+                        <th scope="row">{{ dictionary['End Time'] }}</th>
+                        <th scope="row">{{ dictionary['Event'] }} </th>
+                        <th scope="row">{{ dictionary['Location'] }}</th>
+                    </tr>
+                    {% endfor %}
 
                 {% else %}
                     {{ pass }}
@@ -79,11 +126,51 @@
                 {% endif %}
             {% endfor %}
             {% endif %}
-
             </tbody>
         </table>
-    </div>
+  </div>
+  <div class="tab-pane fade marino-info-container-clear" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <table class="table table-bordered table-striped table-hover">
+            <thead>
+      <!--            If there are no events at all today-->
+            {% if context["Events"]["Sports Court"] == "No Events Today" %}
+
+                <h1> No Events at Sports Court Today... :( </h1>
+
+<!--            If there are any events display them in the table-->
+            {% else %}
+            <tr>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+                <th scope="col">Event Name</th>
+                <th scope="col">Location</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for key in context["Events"] %}
+
+                {% if key == "Sports Court" %}
+                            <tr>
+                    {% for dictionary in context["Events"][key] %}
+                        <th scope="row">{{ dictionary['Start Time'] }}</th>
+                        <th scope="row">{{ dictionary['End Time'] }}</th>
+                        <th scope="row">{{ dictionary['Event'] }} </th>
+                        <th scope="row">{{ dictionary['Location'] }}</th>
+                    </tr>
+                    {% endfor %}
+
+                {% else %}
+                    {{ pass }}
+
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+  </div>
 </div>
+
 
 
 <!--HOURS -->

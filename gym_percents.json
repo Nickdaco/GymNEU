@@ -8,14 +8,7 @@
         "Start Time": "5:30 AM"
       }
     ],
-    "Court 3": [
-      {
-        "End Time": "12:00 AM",
-        "Event": "Open Basketball",
-        "Location": "Marino Center - BB Ct3",
-        "Start Time": "5:30 AM"
-      }
-    ],
+    "Court 3": "No Events Today",
     "Multipurpose Room & Squash Courts": "No Events Today",
     "Open Skate": "No Events Today",
     "Open Swim": "No Events Today",
@@ -31,7 +24,7 @@
   "Gym-Availability-Percentage": {
     "Marino Center - 2nd Floor": 6,
     "Marino Center - 3rd Floor Select & Cardio": 6,
-    "Marino Center - 3rd Floor Weight Room": 6,
+    "Marino Center - 3rd Floor Weight Room": 90,
     "Marino Center - Gymnasium": 7,
     "Marino Center - Track": 5,
     "SquashBusters - 4th Floor": 10
