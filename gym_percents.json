@@ -11,7 +11,20 @@
     "Court 3": "No Events Today",
     "Multipurpose Room & Squash Courts": "No Events Today",
     "Open Skate": "No Events Today",
-    "Open Swim": "No Events Today",
+    "Open Swim": [
+      {
+        "End Time": "12:00 AM",
+        "Event": "Open Basketball",
+        "Location": "Marino Center - BB Ct2",
+        "Start Time": "5:30 AM"
+      },
+            {
+        "End Time": "12:00 AM",
+        "Event": "Open Basketball",
+        "Location": "Marino Center - BB Ct2",
+        "Start Time": "5:30 AM"
+      }
+    ],
     "Sports Court": [
       {
         "End Time": "12:00 AM",
