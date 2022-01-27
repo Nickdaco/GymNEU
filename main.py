@@ -11,6 +11,7 @@ gym_data = json.load(f)
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     list_of_days = []
@@ -23,21 +24,26 @@ def index():
     date_time = today.strftime("%d/%m/%y %H:%M:%S")
     return render_template('home.html', context=context, date_time=date_time, list_of_days=list_of_days)
 
+
 @app.route('/marino')
 def marino():
     return redirect(url_for('index'))
+
 
 @app.route('/squashbusters')
 def squash():
     return render_template('squash.html', context=gym_data)
 
+
 @app.route('/skate')
 def skate():
     return render_template('skate.html', context=gym_data)
 
+
 @app.route('/swim')
 def swim():
     return render_template('swim.html', context=gym_data)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
