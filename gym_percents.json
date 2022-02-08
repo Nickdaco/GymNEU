@@ -2,44 +2,75 @@
   "Events": {
     "Court 2": [
       {
-        "End Time": "12:00 AM",
-        "Event": "Open Basketball",
-        "Location": "Marino Center - BB Ct2",
-        "Start Time": "5:30 AM"
-      }
-    ],
-    "Court 3": "No Events Today",
-    "Multipurpose Room & Squash Courts": "No Events Today",
-    "Open Skate": "No Events Today",
-    "Open Swim": [
-      {
-        "End Time": "12:00 AM",
+        "End Time": "10:00 PM",
         "Event": "Open Basketball",
         "Location": "Marino Center - BB Ct2",
         "Start Time": "5:30 AM"
       },
-            {
+      {
         "End Time": "12:00 AM",
-        "Event": "Open Basketball",
+        "Event": "Badminton (CS)",
         "Location": "Marino Center - BB Ct2",
+        "Start Time": "10:00 PM"
+      }
+    ],
+    "Court 3": [
+      {
+        "End Time": "6:00 PM",
+        "Event": "Open Basketball",
+        "Location": "Marino Center - BB Ct3",
         "Start Time": "5:30 AM"
+      },
+      {
+        "End Time": "12:00 AM",
+        "Event": "Intramural Sports",
+        "Location": "Marino Center - BB Ct3",
+        "Start Time": "6:00 PM"
+      }
+    ],
+    "Multipurpose Room & Squash Courts": "No Events Today",
+    "Open Skate": "No Events Today",
+    "Open Swim": [
+      {
+        "End Time": "8:30 PM",
+        "Event": "OPEN",
+        "Location": "SWIM Cabot Gym - Pool",
+        "Start Time": "7:30 PM"
       }
     ],
     "Sports Court": [
       {
-        "End Time": "12:00 AM",
+        "End Time": "5:45 PM",
         "Event": "Open Volleyball",
+        "Location": "Marino Center - SP Court",
+        "Start Time": "9:00 AM"
+      },
+      {
+        "End Time": "8:00 PM",
+        "Event": "Inline Hockey (CS)",
+        "Location": "Marino Center - SP Court",
+        "Start Time": "6:00 PM"
+      },
+      {
+        "End Time": "10:00 PM",
+        "Event": "M Volleyball (CS)",
+        "Location": "Marino Center - SP Court",
+        "Start Time": "8:00 PM"
+      },
+      {
+        "End Time": "12:00 AM",
+        "Event": "Open Basketball",
         "Location": "Marino Center - SP Court",
         "Start Time": "10:00 PM"
       }
     ]
   },
   "Gym-Availability-Percentage": {
-    "Marino Center - 2nd Floor": 6,
-    "Marino Center - 3rd Floor Select & Cardio": 6,
-    "Marino Center - 3rd Floor Weight Room": 90,
-    "Marino Center - Gymnasium": 7,
-    "Marino Center - Track": 5,
-    "SquashBusters - 4th Floor": 10
+    "Marino Center - 2nd Floor": 35,
+    "Marino Center - 3rd Floor Select & Cardio": 31,
+    "Marino Center - 3rd Floor Weight Room": 88,
+    "Marino Center - Gymnasium": 62,
+    "Marino Center - Track": 25,
+    "SquashBusters - 4th Floor": 33
   }
 }
