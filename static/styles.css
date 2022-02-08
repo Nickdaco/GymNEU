@@ -9,7 +9,7 @@ body {
     margin-top: 5rem;
 }
 h1 {
-    
+
     display: flex;
     font-size: 50px;
     color: black;
@@ -19,11 +19,12 @@ h1 {
     padding: 10px;
     padding-left: 0;
     padding-right: 0;
-    border: 3px solid #B10617;
+    border: 3px solid rgba(184, 51, 47);
     width: 50%;
     margin-bottom: 40px;
     border-radius: 20px;
     margin-top: 40px;
+    text-align: center;
 }
 .marino-info-container {
     background-color: white;
@@ -65,7 +66,7 @@ span {
     margin: auto;
     font-size: 30px;
 
-    color: red;
+    color: black;
     justify-content: center;
 }
 
@@ -154,7 +155,7 @@ span {
 }
 
 .bg-red {
-  background-color: #e0091b;
+  background-color: rgba(184, 51, 47);
 }
 
 .marino-info-container-clear {
@@ -357,6 +358,10 @@ span {
     margin-right:0;
     font-weight:600
   }
+}
+
+.navbar-left {
+  margin-left: auto;
 }
 
 /* CSS Footer Template End */
