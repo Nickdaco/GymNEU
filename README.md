@@ -1,3 +1,3 @@
-# HunkyHusky
+# GymNEU
 
 Made by Victor and Nick
