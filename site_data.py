@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 
+# Create a site object that contains all relevant website information
 class SiteData:
     def __init__(self, url, find_path, find_type, title):
         self.url = url
@@ -22,4 +23,3 @@ class SiteData:
             return driver.find_elements(By.XPATH, self.find_path)
         else:
             print("unable to find anything")
-            

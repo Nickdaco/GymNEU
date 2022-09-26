@@ -10,6 +10,7 @@ gym_percents = SiteData(
     'class_name',
     'Gym-Availability-Percentage')
 
+# List of the supported gyms/courts
 gym_list = [
     'Marino Center - 2nd Floor',
     'Marino Center - Gymnasium',
@@ -39,6 +40,7 @@ event_links = {
     'Open Skate': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=X4Oln4TEUSDqTi3gentDkmPIUn6POLGgxyzC1%2fL8tqL9OpassShMi692gKIXHpNl4wiYFqBcx3B8kWEBp5QEPhJTo4MgGrVQfwbfooixi%2blXFhc11ClkPf84D6d6%2fYeN',
     'Open Swim': 'https://nuevents.neu.edu/CustomBrowseEvents.aspx?data=QuRdKeqFzOlNiDrD91Zu3JPCyDwz%2fhHG9ckX647qjC07Fk3%2bOa0Vhton7y7Pf65SEQSDcKWBz7eFUOPtJ8kUv9GE4LqMul60GHKgh%2bBC3KY%3d'
 }
+
 event_out = {}
 for key in event_links:
     event_out[key] = event_to_dict(get_events(event_links[key]))

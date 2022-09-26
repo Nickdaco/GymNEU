@@ -5,7 +5,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.common.exceptions import TimeoutException
 
-# Goes to given link and grabs the event info
+# Handling scraping websites with Selenium
+
+# Goes to given link and returns the event info
 def get_events(link):
 
     driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -13,8 +15,10 @@ def get_events(link):
     click1 = driver.find_element(By.XPATH, '//*[@id="browse-tabs"]/li[1]/a')
     click1.click()
 
+    # allow page content to load
     wait = WebDriverWait(driver, 20)
 
+    # check if there is page content
     try:
         wait.until(expected_conditions.visibility_of_element_located((By.XPATH, '//*[@id="eventResults"]/div/div[6]/div/div/div/table/tbody/tr[1]/td[1]')))
         event_results = driver.find_element(By.ID, 'eventResults').text
@@ -24,7 +28,7 @@ def get_events(link):
     return event_results
 
 
-# Handles the data and creation of an Event
+# Handles the data and creation of an Event object
 class Event:
     def __init__(self, start_time, end_time, activity, location):
         self.start_time = start_time
@@ -39,7 +43,7 @@ class Event:
         return output_dict
 
 
-# takes outputted list from the website and makes it into something usable
+# takes outputted list from the website and makes it into a usable dictionary
 def event_to_dict(event_results):
 
     if event_results == "No Events Today":
@@ -55,6 +59,7 @@ def event_to_dict(event_results):
         event_list = []
         word_list = [elem.split() for elem in event_results_list]
 
+        # Loop through the word list, standardize start time, end time, events, and locations
         for num in range(len(word_list)):
             start_time = " ".join(word_list[num][:2])
 
@@ -64,6 +69,7 @@ def event_to_dict(event_results):
             activity_slice = word_list[num][5:]
             location = " ".join(activity_slice[-5:])
 
+            # Removing duplicates
             for element in activity_slice[-5:]:
                 if element in activity_slice:
                     activity_slice.remove(element)
@@ -72,6 +78,7 @@ def event_to_dict(event_results):
 
             event_list.append(Event(start_time, end_time, activity, location))
 
+            # Convert the event objects into a list containing all data nesessary
             final_event_list = [event.make_dict() for event in event_list]
 
         return final_event_list
